@@ -1,0 +1,26 @@
+/* CSS Resets*/
+body, p {
+    margin: unset;
+}
+
+h1 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+.wrapper {
+    background-color: white;
+}
+
+.oaklab-article {
+    box-shadow: inset 0 0 20px red;
+}
+
+.list {
+    box-shadow: inset 0 0 20px blue;
+}
+
+.footer {
+    box-shadow: inset 0 0 20px turquoise;
+}
