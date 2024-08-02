@@ -19,13 +19,17 @@ h1, h2 {
     font-family: arial;
 }
 
-.wrapper {
-    background-color: white;
+/* Layout */
+
+.l_article-wrapper {
+    width: 482px;
 }
 
+/* Design */
 .oaklab {
     background-image: url(./images/header-bg.png);
-    display: flow-root;
+    /* display: flow-root; */
+    overflow: hidden;
 }
 
 .oaklab-article {
@@ -64,7 +68,6 @@ h1, h2 {
 
 .oaklab-article .oaklab-text {
     line-height: 1.6;
-    width: 482px;
 }
 
 .oaklab-videos {
@@ -108,5 +111,12 @@ h1, h2 {
 }
 
 .footer {
-    box-shadow: inset 0 0 20px turquoise;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #AAA;
+    line-height: 1.6;
+    letter-spacing: .29em;
+    border-top: 2px solid;
+    padding: 14.3px;
 }
