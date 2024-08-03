@@ -31,6 +31,10 @@ h1, h2 {
     padding: 60px;
 }
 
+/* Components */
+
+
+
 /* Design */
 .oaklab {
     background-image: url(./images/header-bg.png);
@@ -82,20 +86,29 @@ h1, h2 {
 
 
 .oaklab-videos .videos-list .video-card {
-    background-color: #FFF;
     display: inline-block;
+    margin-right: 30px;
+    background-color: #FFF;
     width: 300px;
     height: 280px;
     border-radius: 6px;
     overflow: hidden;
-    margin-right: 30px;
 }
 
 .oaklab-videos .videos-list .video-card:last-child {
     margin-right: unset;
 }
 
-.oaklab-videos .videos-list .video-card .card .video-title {
+.card {
+    background-color: #FFF;
+    width: 300px;
+    height: 280px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+.card .video-title {
     font-weight: bold;
     line-height: 1.6;
     color: #FFA500;
@@ -107,7 +120,7 @@ h1, h2 {
     background-position: right center;
 }
 
-.oaklab-videos .videos-list .video-card .card .thumbnail{
+.card .thumbnail{
     vertical-align: bottom;
 }
 
