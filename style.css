@@ -20,20 +20,11 @@ h1, h2 {
 }
 
 /* Layout */
-
-.l_article-wrapper {
-    width: 482px;
-}
-
 .oaklab-article {
     width: 960px;
     margin: 100px auto -30px;
-    padding: 60px;
+    padding: 60px 360px 60px 60px ;
 }
-
-/* Components */
-
-
 
 /* Design */
 .oaklab {
@@ -102,7 +93,6 @@ h1, h2 {
     overflow: hidden;
 }
 
-
 .card .video-title {
     font-weight: bold;
     line-height: 1.6;
@@ -131,16 +121,15 @@ h1, h2 {
 }
 
 /* Media Query*/
-@media (max-width: 960px) {
+@media (max-width: 860px) {
     .oaklab-article {
         background-image: none;
         width: auto;
+        padding: 60px;
     }
+}
 
-    .oaklab-article .l_article-wrapper {
-        width: auto;
-    }
-    
+@media (max-width: 730px) {
     .oaklab-videos .videos-list .video-card {
         display: block;
         margin: 0 0 30px;
