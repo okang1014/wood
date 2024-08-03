@@ -73,7 +73,7 @@ h1, h2 {
 
 .oaklab-videos {
     background-color: #DDD;
-    padding: 30px 0;
+    padding: 30px ;
 }
 
 .oaklab-videos .videos-list {
@@ -120,4 +120,31 @@ h1, h2 {
     letter-spacing: .29em;
     border-top: 2px solid;
     padding: 14.3px;
+}
+
+/* Media Query*/
+@media (max-width: 960px) {
+    .oaklab-article {
+        background-image: none;
+        width: auto;
+    }
+
+    .oaklab-article .l_article-wrapper {
+        width: auto;
+    }
+    
+    .oaklab-videos .videos-list .video-card {
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .oaklab-videos .videos-list .video-card:last-child {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 560px) {
+    .oaklab-article .oaklab-title::after {
+        width: 270px;
+    }
 }
