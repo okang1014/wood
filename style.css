@@ -25,6 +25,12 @@ h1, h2 {
     width: 482px;
 }
 
+.oaklab-article {
+    width: 960px;
+    margin: 100px auto -30px;
+    padding: 60px;
+}
+
 /* Design */
 .oaklab {
     background-image: url(./images/header-bg.png);
@@ -33,12 +39,7 @@ h1, h2 {
 }
 
 .oaklab-article {
-    width: 960px;
-    margin: 100px auto 0;
-    padding: 60px;
-    border-top: 30px solid;
-    border-left: 30px solid;
-    border-right: 30px solid;
+    border: 30px solid;
     color: #FFA500;
     background-image: url(./images/container-bg.png);
     background-repeat: no-repeat;
