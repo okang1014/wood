@@ -1,21 +1,39 @@
 /* CSS Resets */
-body, p {
+body, p, ul {
     margin: unset;
+    padding: unset;
 }
 
-h1 {
+h1, h2 {
     margin: unset;
     padding: unset;
     font-size: unset;
     font-weight: unset;
 }
 
+li {
+    list-style-type: none;
+}
+
 
 /* Layout */
 .l_wrapper {
-    box-shadow: inset 0 0 20px orange;
     width: 960px;
     margin: 0 auto;
+}
+
+.l_row {
+    padding: 30px 0;
+    font-size: 0;
+    margin: 0 -15px;
+}
+
+.l_col {
+    display: inline-block;
+    font-size: initial;
+    width: 33.333333333%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 /* Typography */
@@ -26,6 +44,8 @@ h1 {
 
 .oaklab-article {
     background-image: url(images/header-bg.png);
+    padding-top: 100px; 
+    /* margin-top 사용 시 상단 마진 병합 현상 발생, 이에 따른 배경 잘림 현상 발생 */
 }
 
 .oaklab-article .l_wrapper .oaklab-info {
@@ -68,8 +88,37 @@ h1 {
     margin-bottom: -120px;
 }
 
-.list {
-    box-shadow: inset 0 0 20px blue;
+.oaklab-list {
+    background-color: #DDD;
+}
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card .card-cover {
+    vertical-align: bottom;
+}
+
+.card .card-title {
+    border-top: 4px solid #FFA500;
+    padding: 0 10px;
+}
+
+.card .card-title h2 {
+    font-weight: bold;
+    color: #FFA500;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 230px;
+}
+
+.card .card-title .play-button {
+    vertical-align: top;
+    margin-right: -10px;
 }
 
 .footer {
