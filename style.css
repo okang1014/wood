@@ -1,17 +1,39 @@
-/* CSS Resets*/
+/* CSS Resets */
 body, p, ul {
     margin: unset;
     padding: unset;
+}
+
+h1, h2 {
+    margin: unset;
+    padding: unset;
+    font-size: unset;
+    font-weight: unset;
 }
 
 li {
     list-style-type: none;
 }
 
-h1, h2 {
-    margin: unset;
-    font-size: unset;
-    font-weight: unset;
+
+/* Layout */
+.l_wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.l_row {
+    padding: 30px 0;
+    font-size: 0;
+    margin: 0 -15px;
+}
+
+.l_col {
+    display: inline-block;
+    font-size: initial;
+    width: 33.333333333%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 /* Typography */
@@ -19,133 +41,91 @@ h1, h2 {
     font-family: arial;
 }
 
-/* Layout */
+
 .oaklab-article {
-    width: 960px;
-    margin: 100px auto -30px;
-    padding: 60px 360px 60px 60px ;
+    background-image: url(images/header-bg.png);
+    padding-top: 100px; 
+    /* margin-top 사용 시 상단 마진 병합 현상 발생, 이에 따른 배경 잘림 현상 발생 */
 }
 
-/* Design */
-.oaklab {
-    background-image: url(./images/header-bg.png);
-    /* display: flow-root; */
+.oaklab-article .l_wrapper .oaklab-info {
+    color: #FFA500;
+    border-width: 30px 30px 0 30px;
+    border-style: solid;
+    border-color: currentColor;
+    padding: 60px;
     overflow: hidden;
 }
 
-.oaklab-article {
-    border: 30px solid;
-    color: #FFA500;
-    background-image: url(./images/container-bg.png);
-    background-repeat: no-repeat;
-    background-position: right 54px top 54px;
-    box-sizing: border-box;
+.oaklab-article .l_wrapper .oaklab-info .oaklab-text {
+    display: inline-block;
+    vertical-align: top;
+    width: 480px; 
 }
 
-.oaklab-article .oaklab-title {
+.oaklab-article .l_wrapper .oaklab-info .oaklab-text .title {
+    color: currentColor;
     font-size: 32px;
-    letter-spacing: .19em;
-    margin-bottom: 34px;
+    letter-spacing: 0.19em;
+    width: fit-content;
+    margin-bottom: 35px;
 }
 
-.oaklab-article .oaklab-title span {
-    font-weight: bold;
-}
-
-.oaklab-article .oaklab-title::after {
+.oaklab-article .l_wrapper .oaklab-info .oaklab-text .title::after {
     content: ' ';
-    width: 373px;
-    height: 2px;
-    background-color: #FFA500;
     display: block;
-    border: 1px solid black;
-    border-radius: 12px;
+    width: 380px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 10px;
 }
 
-.oaklab-article .oaklab-text {
+.oaklab-article .l_wrapper .oaklab-info .oaklab-text p {
     line-height: 1.6;
 }
 
-.oaklab-videos {
+.oaklab-article .l_wrapper .oaklab-info .oaklab-cover {
+    margin-bottom: -120px;
+}
+
+.oaklab-list {
     background-color: #DDD;
-    padding: 30px;
-}
-
-.oaklab-videos .videos-list {
-    text-align: center; 
-}
-
-
-.oaklab-videos .videos-list .video-card {
-    display: inline-block;
-    margin-right: 30px;
-}
-
-.oaklab-videos .videos-list .video-card:last-child {
-    margin-right: unset;
 }
 
 .card {
-    background-color: #FFF;
-    width: 300px;
-    height: 280px;
+    background-color: white;
     border-radius: 6px;
     overflow: hidden;
 }
 
-.card .video-title {
-    font-weight: bold;
-    line-height: 1.6;
-    color: #FFA500;
-    padding: 10px;
-    text-align: initial;
-    border-top: 4px solid;
-    background-image: url(./images/play.png);
-    background-repeat: no-repeat;
-    background-position: right center;
+.card .card-cover {
+    vertical-align: bottom;
 }
 
-.card .thumbnail{
-    vertical-align: bottom;
+.card .card-title {
+    border-top: 4px solid #FFA500;
+    padding: 0 10px;
+}
+
+.card .card-title h2 {
+    font-weight: bold;
+    color: #FFA500;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    width: 230px;
+}
+
+.card .card-title .play-button {
+    vertical-align: top;
+    margin-right: -10px;
 }
 
 .footer {
     text-align: center;
     font-size: 14px;
-    font-weight: bold;
-    color: #AAA;
-    line-height: 1.6;
+    line-height: 54px;
     letter-spacing: .29em;
-    border-top: 2px solid;
-    padding: 14.3px;
-}
-
-/* Media Query*/
-@media (max-width: 860px) {
-    .oaklab-article {
-        background-image: none;
-        width: auto;
-        padding: 60px;
-    }
-}
-
-@media (max-width: 730px) {
-    .oaklab-videos .videos-list .video-card {
-        display: block;
-        margin: 0 0 30px;
-    }
-
-    .card {
-        margin: 0 auto;
-    }
-
-    .oaklab-videos .videos-list .video-card:last-child {
-        margin-bottom: 0;
-    }
-}
-
-@media (max-width: 560px) {
-    .oaklab-article .oaklab-title::after {
-        width: 270px;
-    }
+    color: #AAA;
+    border-top: 2px solid #AAA;
 }
