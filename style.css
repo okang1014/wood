@@ -1,0 +1,24 @@
+/* CSS Resets */
+body {
+    margin: unset;
+}
+
+.l_wrapper {
+    box-shadow: inset 0 0 20px orange;
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+.article {
+    box-shadow: inset 0 0 20px red;
+}
+
+.list {
+    box-shadow: inset 0 0 20px blue;
+}
+
+.footer {
+    box-shadow: inset 0 0 20px turquoise;
+}
+
